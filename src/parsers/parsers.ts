@@ -41,6 +41,7 @@ import { POJContestParser } from './contest/POJContestParser';
 import { QDUOJContestParser } from './contest/QDUOJContestParser';
 import { RoboContestContestParser } from './contest/RoboContestContestParser';
 import { SeriousOJContestParser } from './contest/SeriousOJContestParser';
+import { SZUOJContestParser } from './contest/SZUOJ';
 import { TimusOnlineJudgeContestParser } from './contest/TimusOnlineJudgeContestParser';
 import { TLXContestParser } from './contest/TLXContestParser';
 import { UniversalCupContestParser } from './contest/UniversalCupContestParser';
@@ -79,6 +80,7 @@ import { CSAcademyProblemParser } from './problem/CSAcademyProblemParser';
 import { CSESProblemParser } from './problem/CSESProblemParser';
 import { CSGOJProblemParser } from './problem/CSGOJProblemParser';
 import { CSUACMOnlineJudgeProblemParser } from './problem/CSUACMOnlineJudgeProblemParser';
+import { DaimayuanOJProblemParser } from './problem/DaimayuanProblemParser';
 import { DimikOJProblemParser } from './problem/DimikOJProblemParser';
 import { DMOJProblemParser } from './problem/DMOJProblemParser';
 import { ECNUOnlineJudgeProblemParser } from './problem/ECNUOnlineJudgeProblemParser';
@@ -151,6 +153,7 @@ import { VirtualJudgeProblemParser } from './problem/VirtualJudgeProblemParser';
 import { XCampProblemParser } from './problem/XCampProblemParser';
 import { XXMProblemParser } from './problem/XXMProblemParser';
 import { YandexProblemParser } from './problem/YandexProblemParser';
+import { ybtOJProblemParser } from './problem/ybtProblemParser';
 import { YukicoderProblemParser } from './problem/YukicoderProblemParser';
 import { ZOJProblemParser } from './problem/ZOJProblemParser';
 import { ZUFEOJProblemParser } from './problem/ZUFEOJProblemParser';
@@ -224,6 +227,8 @@ export const parsers: Parser[] = [
 
   new CSUACMOnlineJudgeProblemParser(),
   new CSUACMOnlineJudgeContestParser(),
+
+  new DaimayuanOJProblemParser(),
 
   new DimikOJProblemParser(),
 
@@ -367,6 +372,8 @@ export const parsers: Parser[] = [
 
   new StarryCodingProblemParser(),
 
+  new SZUOJContestParser(),
+
   new TheJobOverflowProblemParser(),
 
   new TimusOnlineJudgeProblemParser(),
@@ -399,6 +406,8 @@ export const parsers: Parser[] = [
 
   new YandexProblemParser(),
   new YandexContestParser(),
+
+  new ybtOJProblemParser(),
 
   new YukicoderProblemParser(),
   new YukicoderContestParser(),
